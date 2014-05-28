@@ -1,0 +1,659 @@
+body {
+	background: #EDEBE6;
+	color: #D3643B;
+	font: 1em verdana;
+  	margin:0;
+}
+
+h1{
+	background: rgba(255,255,255,.7);
+	width: 850px;
+	height: 30px;
+	font-family: 'Arvo', serif;
+	font-size: 18pt;
+	font-weight: 400;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	padding: 2px;
+	text-indent: 15px;
+	margin: 0 auto;
+}
+
+/*Name header*/
+#name{
+	display: block;
+	width: 100%;
+	background: #EDEBE6;
+	font-family: 'Arvo', sans-serif;
+	font-size:4em;
+	text-align: center;
+	position: fixed;
+	top: 0px;
+	z-index: 5000;
+}
+
+/*Navigation bar*/
+#navigation{
+	display: block;
+	width: 100%;
+	background: #94C7B6;
+	text-align: center;
+	border-bottom: 10px solid #D6E1C7;
+	position: fixed;
+	top: 70px;
+	z-index: 5000;
+}
+	#navigation ul{
+		list-style-type: none;
+		padding: 0px;
+		margin: auto;
+		width: 100%;
+	}
+	#dropdownnav{display: none;}
+
+	#navigation li{
+		display: inline;
+		width: 100%;
+		font: 1.2em;
+		font-family: 'Arvo', sans-serif;
+		text-transform: uppercase;
+		padding: 20px;
+		margin: auto;	
+	}
+
+	#navigation li a{
+	color: #EDEBE6;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	}
+
+	#navigation li a:hover{
+	color: #EDEBE6;
+	background: #D3643B;
+	}
+
+	#navigation li a:active{
+	color: grey;
+	}
+
+
+/*JS Slider stuff*/
+#featuredslider {
+	display: block;
+	width: 856px;
+	margin: 130px auto 0;
+
+}
+
+* { margin: 0;
+padding: 0;}
+
+#slider-nav{
+	display: none;
+}
+
+#slider-nav button {
+	border-radius: 100px;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	border: none;
+	text-align: center;
+	color: #fff;
+	padding: 2px;
+	margin: 5px auto 0px;
+}
+
+.slider{
+	width: inherit;
+	height: 520px;
+	overflow: hidden;
+}
+
+.slider ul{
+	width: 5000px;
+	list-style: none;
+}
+
+.slider li{
+	float: left;
+}
+
+#featuredslider{
+	top: 200px;
+}
+#slider-nav button {
+	background-color: #D3643B;
+}
+
+/*biographyblock*/
+#biographyblock{
+	display: block;
+	height: 100%; 
+	background: #D6E1C7;
+	padding: 40px 0px 40px 0px;
+	border-top: 10px solid #EDEBE6;
+}
+
+#biographyblock a{
+	color: #D3643B;
+}
+
+#biographyblock a:hover{
+	color: #403B33;
+}
+
+#biography{width: 850px;
+	margin: auto;
+}
+
+#biography p{
+	font: .8em;
+	font-family: 'Arvo', sans-serif;
+	color: #403B33;
+	margin-top: 15px;
+	margin-left: 15px;
+	display: inline-block;
+	line-height: 1.5em;
+	width: 75%;
+}
+
+#biography img{
+	display: block;
+	margin-top: 20px;
+	margin-left: 10px;
+	float: left;
+	text-align: left;
+	width: 22%;
+}
+
+#bio_paragraph{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	font-family: 'Arvo'; 
+	font-size: 11pt;
+}
+
+		/*bio blocks*/
+		#bio_experience{
+			width: 32%;
+			background: rgba(255,255,255,.3);
+			height: 250px;
+			display: inline-block;
+			padding: 0px;
+			margin-top: 20px;
+			margin-right: 10px;
+			float: left;
+}
+
+		#bio_experience h1{
+			width: 99%	;
+			background: rgba(255,255,255,.7);
+			text-align: center;
+			margin-top: 10px;
+			text-transform: capitalize;
+			font-size: 14pt;
+			height: auto;
+		}
+
+		#bio_hobbies{
+			width: 33%;
+			background: rgba(255,255,255,.3);
+			height: 250px;
+			display: inline-block;
+			padding: 0px;
+			margin-top: 20px;
+			margin-right: 10px;
+			float: left;
+
+		}
+
+		#bio_hobbies h1{
+			width: 99%	;
+			background: rgba(255,255,255,.7);
+			text-align: center;
+			margin-top: 10px;
+			text-transform: capitalize;
+			font-size: 14pt;
+			height: auto;
+		}
+
+		#bio_interests{
+			width: 32%;
+			background: rgba(255,255,255,.3);
+			height: 250px;
+			display: inline-block;
+			padding: 0px;
+			margin-top: 20px;
+		}
+
+		#bio_interests h1{
+			width: 99%	;
+			background: rgba(255,255,255,.7);
+			text-align: center;
+			margin-top: 10px;
+			text-transform: capitalize;
+			font-size: 14pt;
+			height: auto;
+		}
+
+		#bio_blocks{
+			margin: auto;
+			padding-bottom: 15px;
+			display: block;
+		}
+
+
+		.orangeicon{
+			color: #D3643B; 
+			font-size: 3em;
+		}
+
+		.whitecircle{
+			color: white;
+			font-size: 5em;
+		}
+
+		.alignright{
+			text-align: right;
+			float: right;
+			margin: 3px;
+		}
+
+		.bio_blocks_content {
+			text-align: center;
+			width: 100% !important;
+			margin-left: 0px !important;
+			padding: 5px;
+			
+		}
+
+			#bio_experience ul{
+				width: 75%;
+				margin: auto;
+				list-style-type: none;
+				font-size: .7em;
+				line-height: 1.8em;
+				color: #555;
+			}
+
+			#bio_interests ul{
+			width: 75%;
+			margin: auto;
+			list-style-type: none;
+			font-size: .7em;
+			line-height: 1.8em;
+			color: #555;
+			}
+
+			#bio_hobbies ul{
+			width: 75%;
+			margin: auto;
+			list-style-type: none;
+			font-size: .7em;
+			line-height: 1.8em;
+			color: #555;
+			}
+
+/*Galleryblock*/
+#galleryblock{
+	display: block;
+	background: #D3643B;
+	margin: auto;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+#gallery{
+	width: 850px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.gallerythumb{
+	width: 250px;
+	height: auto;
+	background-color: #fff;
+	border: 1px solid grey;
+	margin: 12px;
+	display: inline-block;
+}
+
+		/*LIGHTBOX CSS*/
+				#closelightbox {
+					position: relative;
+					top: 0px;
+					right: 0px;
+					text-align:right; 
+					color:#fff; 
+					margin-right:20px; 
+					font-size:12px;
+					
+				}
+				#lightbox {
+					position:fixed; /* keeps the lightbox window in the current viewport */
+					top:0; 
+					left:0; 
+					width:100%; 
+					height:100%; 
+					background:rgba(0,0,0,.85); 
+					text-align:center;
+					z-index: 90999999;
+				}
+
+				#lightbox img {
+					box-shadow:0 2 15px #111;
+					-webkit-box-shadow:0 2 15px #111;
+					-moz-box-shadow:0 2 15px #111;
+					max-width:940px;
+					max-height: 55%;
+				}
+
+				.lightbox_thumbnail{
+					width: 123px;
+					height: auto;
+				}
+
+				#lightbox_info{
+					background-color: rgba(255,255,255,.95);
+					font-family: 'Arvo';
+					color: rgb(0,0,0);
+					font-size: 1em;
+					width: 50%;
+					max-height: 250px;
+					margin: auto;
+					padding: 10px;
+					margin-top: 20px;
+				}
+
+
+/*Resume*/
+#resumelink{
+	display: block;
+	background: #EDEBE6;
+	height: 100%;
+	text-align: center;
+	padding:120px;
+	margin: auto;
+	vertical-align: middle;
+}
+
+#resumelink a{
+	font-family: 'Arvo', sans-serif;
+	font-size: 3em;
+	color: #94C7B6; 
+	text-decoration: none;
+}
+
+#resumelink a:hover{
+	color: #7eab9c;
+}
+
+	#resume{
+		width: 100%;
+		display: block;
+		background: #eee;
+		height: 100%; 
+		padding-top: 10px;
+		text-align: left; 
+	}
+
+	#resume p{
+		font-style: italic;
+		padding:20px;
+		}
+
+	#resume h2{
+		text-align: center;
+		font-family: Arvo;
+	}
+
+	#resume h3{
+		text-align: center;
+		font-size: .7em;
+		padding-bottom: 20px;
+	}
+
+	#resume h4{
+		letter-spacing: 2px;
+		font-family: Arvo;
+		text-transform: uppercase;
+		text-decoration: underline;
+		padding: 5px;
+	}
+
+	#resume h5{
+		font-weight: normal;
+		font-style:italic;
+		font-size: .8em;
+		padding: 10px 0px 10px 0px;
+	}
+
+	#resume ul{
+		padding: 10px;
+		list-style-type: none;
+	}
+
+	#resume li{
+		margin-left: 20px;
+		list-style-type: none;
+
+	}
+
+	#resume .resumebullet{
+		list-style-type: circle;
+	}
+
+/*Contact*/
+#contactblock{
+	display: block;
+	background: #D6E1C7;
+	height: 250px;
+}
+
+#contactblock form{
+	width: 480px;
+	margin: auto;
+	padding: 10px 60px 60px 60px;
+}
+.forminput{
+	width: 480px;
+	padding: 10px;
+	margin: 10px 0px 0px 0px ;
+	font-family: Arvo;
+	font-size: 1em;
+	display: inline-block;
+}
+
+.screenreaderformlabel{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;}
+
+#formsubmit input{
+	background: rgba(0,0,0,.4); 
+	border: 0px;
+}
+
+#contactblock h1{
+	text-align: center;
+	display: inline-block;
+	margin: auto;
+	margin-top: 60px;
+	background: none;
+	width: 100%;
+	text-indent: 0px;
+}
+
+
+#contactblock p{
+	text-align: center;
+	padding-top: 20px;
+}
+
+#contactblock a{
+	color: #a64e2e;
+}
+#totop-mobile{
+	display: none;
+}
+
+/*MOBILE/RESPONSIVE VIEW*/
+
+@media (max-width: 872px) {
+/*HIDE SWITCHY buttons*/
+	#switchbuttons{
+		display: none;
+	}
+
+
+
+/*NAVIGATION*/
+#totop-mobile{
+	display: block;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+#totop-mobile a{
+	color: rgba(255,255,255,.9);
+	font-size: 4em;
+	text-shadow: 0px 0px 5px #8b8b8b;
+}
+
+
+#name{
+	position: relative;
+}
+
+h1{
+	width: 100%;
+}
+
+
+	#navigation{
+		display: block;
+		width: 100%;
+		background: #94C7B6;
+		text-align: center;
+		position: relative;
+		border-bottom: 10px solid #D6E1C7;
+		border-top: 10px solid #D6E1C7;
+		top: 0px;
+	}
+	#navigation ul{
+		list-style-type: none;
+		padding: 0px;
+		margin: auto;
+		width: 100%;
+	}
+
+	#navigation li{
+		display: inline-block;
+		width: 100%;
+		font: .8em;
+		font-family: 'Arvo', sans-serif;
+		text-transform: uppercase;
+		margin: auto;	
+		border: 1px solid #D6E1C7;
+	}
+
+	#navigation li a{
+	color: #EDEBE6;
+	text-decoration: none;
+	display: inline-block;
+	}
+
+	#navigation li a:hover{
+	color: #EDEBE6;
+	background: #D3643B;
+	}
+
+	#navigation li a:active{
+	color: grey;
+	}
+
+	/*hide slider at top*/
+ #featuredslider{
+ 	display: none;
+ }
+
+ #biographyblock{
+ 	display: block;
+ 	padding: 0px;
+ }
+ #biography{
+ 	width: auto;
+ 	margin-bottom: 20px;
+ }
+
+ #biography p {
+ 	width: 95%;
+ }
+
+ #bio_paragraph img {
+ 	display: block;
+ 	margin: 10px auto;
+ 	width: 25%;
+ 	float: none;
+ }
+
+ #bio_experience{
+ 	display: block;
+ 	width: 100%;
+ 	height: auto;
+ 	text-align: center;
+ }
+
+ #bio_hobbies{
+ 	display: block;
+ 	width: 100%;
+ 	height: auto;
+ 	text-align: center;
+ }
+
+ #bio_interests{
+ 	display: block;
+ 	width: 100%;
+ 	height: auto;
+ 	text-align: center;
+ }
+
+ .fa-stack {
+ 	display: none;
+}
+
+#gallery{
+	width: 100%;
+	text-align: center;
+}
+.gallerythumb{
+	margin: 20px;
+}
+#galleryblock{
+	top: 20px;
+}}
+
+@media print {
+#name, #navigation, #biographyblock, #galleryblock, #contact, #totop-mobile{display: none;}
+
+#resume{
+	color: black;
+}
+
+#resume h5{
+	padding: 0px;
+}
+
+#resumelink{
+	padding: 0px;
+}
+
+}
+

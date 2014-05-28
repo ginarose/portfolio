@@ -1,0 +1,184 @@
+body {
+	background: #EDEBE6;
+	color: #D3643B;
+	font: 1em verdana;
+  	margin:0;
+}
+
+/*Name header*/
+#name{
+	display: block;
+	width: 100%;
+	background: #EDEBE6;
+	font-family: 'Share Tech Mono', sans-serif;
+	font-size:4em;
+	text-align: center;
+}
+
+/*Navigation bar*/
+#navigation{
+	display: block;
+	width: 100%;
+	background: #94C7B6;
+	text-align: center;
+	border-bottom: 10px solid #D6E1C7;
+}
+	#navigation ul{
+		list-style-type: none;
+		padding: 0px;
+		margin: auto;
+		width: 100%;
+	}
+	#dropdownnav{display: none;}
+	
+	#navigation li{
+		display: inline;
+		width: 100%;
+		font: .8em;
+		font-family: 'Share Tech Mono', sans-serif;
+		text-transform: uppercase;
+		padding: 20px;
+		margin: auto;	
+	}
+
+	#navigation li a{
+	color: #EDEBE6;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	}
+
+	#navigation li a:hover{
+	color: #EDEBE6;
+	background: #D3643B;
+	}
+
+	#navigation li a:active{
+	color: grey;
+	}
+
+
+/*Slider stuff*/
+/*linked externally*/
+
+/*Biography*/
+#biography{
+	display: block;
+	height: 100%; 
+	background: #D6E1C7;
+	padding: .6em;
+	border-top: 10px solid #EDEBE6;
+	border-bottom: 10px solid #EDEBE6;
+}
+
+#biography p{
+	font: .8em;
+	font-family: sans-serif;
+	color: #403B33;
+	display: inline-block;
+	width: 70%;
+	padding: 15px;
+	margin: auto;
+}
+
+#biography img{
+	display: inline-block;
+	margin: 10px;
+}
+
+/*Gallery*/
+#gallery{
+	display: block;
+	background: #D3643B;
+	margin: auto;
+	text-align: center;	
+}
+
+.gallerythumb{
+	width: 300px;
+	height: 300px;
+	background-color: #fff;
+	border: 1px solid grey;
+	margin: 10px;
+	display: inline-block;
+}
+
+/*Resume*/
+#resumelink{
+	display: block;
+	background: #EDEBE6;
+	height: 4em;
+	text-align: center;
+	padding: 20px;
+	margin: auto;
+	vertical-align: middle;
+}
+
+#resumelink a{
+	font-family: 'Share Tech Mono', sans-serif;
+	font-size: 3em;
+	color: #94C7B6; 
+	text-decoration: none;
+}
+
+#resumelink a:hover{
+	color: #7eab9c;
+}
+
+/*Contact*/
+#contact{
+	display: block;
+	background: #D6E1C7;
+	height: 430px;
+	border-bottom: 50px solid #EDEBE6;
+}
+
+
+
+
+/*MOBILE/RESPONSIVE VIEW*/
+
+@media (max-width: 720px) {
+
+#navigation{
+	display: block;
+	width: 100%;
+	background: #94C7B6;
+	text-align: center;
+	border-bottom: 10px solid #D6E1C7;
+}
+	#navigation ul{
+		list-style-type: none;
+		padding: 0px;
+		margin: auto;
+		width: 100%;
+	}
+
+	#navigation li{
+		display: inline-block;
+		width: 100%;
+		font: .8em;
+		font-family: 'Share Tech Mono', sans-serif;
+		text-transform: uppercase;
+		margin: auto;	
+		border: 1px solid #D6E1C7;
+	}
+
+	#navigation li a{
+	color: #EDEBE6;
+	text-decoration: none;
+	display: inline-block;
+	}
+
+	#navigation li a:hover{
+	color: #EDEBE6;
+	background: #D3643B;
+	}
+
+	#navigation li a:active{
+	color: grey;
+	}
+
+
+}
+
